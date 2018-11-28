@@ -1,2 +1,6 @@
 # php-mvc
-This project is still under investication. It will be officially releace soon.
+This is just a simple PHP Model View Controller (MVC).
+
+1. Download and exact the file to your project directory.
+
+
