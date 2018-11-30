@@ -3,7 +3,7 @@ This is just a simple PHP Model View Controller (MVC).
 
 1. Download and exact the file to your project directory.
 
-2. Open .htaccess from your editor and edit:
+2. Open config.php from your editor and edit:
     define('URL', '');
     define('LIBS', 'app/providers/');
     define('INC', 'inc/');
