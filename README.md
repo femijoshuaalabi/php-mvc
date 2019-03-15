@@ -10,8 +10,7 @@ This is just a simple PHP Model View Controller (MVC).
 M => Model => Create a file with the name of your new page
 Example: Creating Model for Home Page
 
-<pre>
-<!-- language: php -->
+<!-- languag: php -->
 <?php
 class HomeModel extends Model {
 
