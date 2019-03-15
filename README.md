@@ -2,23 +2,42 @@
 This is just a simple PHP Model View Controller (MVC).
 
 1. Download and exact the file to your project directory.
+2. Open bootstrap folder in the root directory and locate config.php
+3. Configure your database connection and save
 
-2. Open config.php from your editor and edit:
-    define('URL', '');
-    define('LIBS', 'app/providers/');
-    define('INC', 'inc/');
+<b style="red">P-MVC</b>
+<div><span> The directory is structured with the name MVC</span></div>
+M => Model => Create a file with the name of your new page
+Example: Creating Model for Home Page
+<?php
+class HomeModel extends Model {
 
-    define('DB_TYPE', 'mysql');
-    define('DB_HOST', '');
-    define('DB_NAME', '');
-    define('DB_USER', '');
-    define('DB_PASS', '');
-    3. Open controller folder and create a folder in name of your new url eg: http://mvc-php/home. Your new created folder will be named home and create an index file using same example in the index file located in the controller folder. 
+    function __construct() {
+        parent::__construct();
+    }
+
+}
+
+V => View => Create a Folder with the name of your new page and create the index file for your view directory
+Example: Path = Views/Home/index.php
+Include your page view here
+
+M => C => Create a file with the name of your new page
+Example: Creating Controller for Home Page
+<?php
+class Home extends Controller {
+
+    function __construct() {
+        parent::__construct();
+    }
     
-    4. Apply same step to create your model.
-    5. Apply same step in creating your view.
-    
-    Please Note: This is just a simple MVC works... There are still more to do with it.
-    Thanks... Femi
+    public function index(){
+        $this->output->page('home/index');
+    }
+
+}
+
+Please Note: This is just a simple MVC works... There are still more to do with it.
+Thanks... Femi
 
 
