@@ -24,6 +24,7 @@ Include your page view here
 
 M => C => Create a file with the name of your new page
 Example: Creating Controller for Home Page
+<pre>
 <?php
 class Home extends Controller {
 
@@ -36,7 +37,7 @@ class Home extends Controller {
     }
 
 }
-
+</pre>
 Please Note: This is just a simple MVC works... There are still more to do with it.
 Thanks... Femi
 
