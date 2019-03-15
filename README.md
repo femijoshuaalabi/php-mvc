@@ -9,6 +9,7 @@ This is just a simple PHP Model View Controller (MVC).
 <div><span> The directory is structured with the name MVC</span></div>
 M => Model => Create a file with the name of your new page
 Example: Creating Model for Home Page
+<pre>
 <?php
 class HomeModel extends Model {
 
@@ -17,6 +18,7 @@ class HomeModel extends Model {
     }
 
 }
+</pre>
 
 V => View => Create a Folder with the name of your new page and create the index file for your view directory
 Example: Path = Views/Home/index.php
